@@ -49,9 +49,8 @@ function Name() {
         //   e.currentTarget.style.setProperty('--mouse-y', `${bounding.y}px`)
         // }}
       >
-        <Translate id="homepage.hero.name">愧怍</Translate>
+        <Translate id="homepage.hero.name">東方</Translate>
       </span>
-      <span className="ml-1">👋</span>
     </motion.div>
   )
 }
@@ -63,7 +62,7 @@ export default function Hero() {
         <Name />
         <motion.p custom={2} initial="hidden" animate="visible" variants={variants} className="max-lg:px-4">
           <Translate id="homepage.hero.text">
-            在这里我会分享各类技术栈所遇到问题与解决方案，带你了解最新的技术栈以及实际开发中如何应用，并希望我的开发经历对你有所启发。
+            我是一名解決方案架構師、資深TPM
           </Translate>
         </motion.p>
         <motion.div custom={3} initial="hidden" animate="visible" variants={variants}>

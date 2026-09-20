@@ -1,4 +1,5 @@
 export const projects: Project[] = [
+  /*
   {
     title: '愧怍的小站',
     description: '🦖 基于 Docusaurus 静态网站生成器实现个人博客',
@@ -90,6 +91,10 @@ export const projects: Project[] = [
     tags: ['opensource'],
     type: 'toy',
   },
+  */
+
+
+
   // {
   //   title: 'Image Hosting',
   //   description: '🖼️ 使用 Supabase 搭建一个简易图床',
@@ -109,6 +114,7 @@ export const projects: Project[] = [
   //   type: 'web',
   // },
   // personal
+  /*
   {
     title: 'vscode-extension',
     description: '自写 vscode 插件，提供了光标移动快捷键',
@@ -127,38 +133,10 @@ export const projects: Project[] = [
     tags: ['opensource', 'design'],
     type: 'personal',
   },
-  // {
-  //   title: '@kuizuo/utils',
-  //   description: '整理 JavaScript / TypeScript 的相关工具函数',
-  //   website: 'https://www.npmjs.com/package/@kuizuo/utils',
-  //   tags: ['opensource', 'personal'],
-  //   type: 'personal',
-  // },
-  // {
-  //   title: '@kuizuo/eslint-config',
-  //   description: '来自 antfu 的 ESLint 配置文件',
-  //   website: 'https://github.com/kuizuo/eslint-config',
-  //   tags: ['opensource', 'personal'],
-  //   type: 'personal',
-  // },
-  // commerce
-  // {
-  //   title: 'link-admin',
-  //   description: '基于 nest-vben-admin 编写的一次性充值链接销售系统',
-  //   preview: '/img/project/link-admin.png',
-  //   website: 'http://link.kuizuo.me',
-  //   tags: ['product', 'large'],
-  //   type: 'commerce',
-  // },
-  // {
-  //   title: 'youni',
-  //   description: '基于 nest-vben-admin 编写的一次性充值链接销售系统',
-  //   preview: '/img/project/link-admin.png',
-  //   website: 'http://link.kuizuo.me',
-  //   tags: ['product', 'large'],
-  //   type: 'commerce',
-  // },
+  */
+
   // other
+  /*
   {
     title: '@kuizuo/http',
     description: '基于 Axios 封装的 HTTP 类库',
@@ -187,6 +165,7 @@ export const projects: Project[] = [
     tags: ['opensource'],
     type: 'other',
   },
+  */
 ]
 
 export type Tag = {
@@ -200,10 +179,10 @@ export type TagType = 'favorite' | 'opensource' | 'product' | 'design' | 'large'
 export type ProjectType = 'web' | 'app' | 'commerce' | 'personal' | 'toy' | 'other'
 
 export const projectTypeMap = {
-  web: '🖥️ 网站',
-  app: '💫 应用',
-  commerce: '商业项目',
-  personal: '👨‍💻 个人',
+  web: '🖥️ 網站',
+  app: '💫 APP',
+  commerce: '商業項目',
+  personal: '👨‍💻 個人',
   toy: '🔫 玩具',
   other: '🗃️ 其他',
 }
@@ -220,33 +199,33 @@ export type Project = {
 
 export const Tags: Record<TagType, Tag> = {
   favorite: {
-    label: '喜爱',
-    description: '我最喜欢的网站，一定要去看看!',
+    label: '喜愛',
+    description: '我最喜歡的網站，一定要去看看!',
     color: '#e9669e',
   },
   opensource: {
-    label: '开源',
-    description: '开源项目可以提供灵感!',
+    label: '開源',
+    description: '開源項目可以提供靈感!',
     color: '#39ca30',
   },
   product: {
-    label: '产品',
-    description: '与产品相关的项目!',
+    label: '產品',
+    description: '與產品相關的項目!',
     color: '#dfd545',
   },
   design: {
-    label: '设计',
-    description: '设计漂亮的网站!',
+    label: '設計',
+    description: '設計漂亮的網站!',
     color: '#a44fb7',
   },
   large: {
     label: '大型',
-    description: '大型项目，原多于平均数的页面',
+    description: '大型項目，原本多餘平均數的頁面',
     color: '#8c2f00',
   },
   personal: {
-    label: '个人',
-    description: '个人项目',
+    label: '個人',
+    description: '個人項目',
     color: '#12affa',
   },
 }

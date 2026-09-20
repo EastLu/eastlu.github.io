@@ -1,4 +1,5 @@
 export const Friends: Friend[] = [
+/*
   {
     title: '峰华前端工程师',
     description: '致力于帮助你以最直观、最快速的方式学会前端开发',
@@ -95,6 +96,7 @@ export const Friends: Friend[] = [
     website: 'https://lailai.one',
     avatar: 'https://lailai.one/img/logo.png',
   },
+  */
 ]
 
 export type Friend = {

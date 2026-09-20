@@ -12,6 +12,7 @@ export type FeatureItem = {
 }
 
 const FEATURES: FeatureItem[] = [
+/*
   {
     title: translate({
       id: 'homepage.feature.developer',
@@ -49,6 +50,7 @@ const FEATURES: FeatureItem[] = [
     ),
     header: <OpenSourceSvg className="h-auto w-full" height={150} role="img" />,
   },
+  */
 ]
 
 export default FEATURES

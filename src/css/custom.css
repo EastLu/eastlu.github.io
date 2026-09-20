@@ -65,7 +65,11 @@
   }
 
   html[data-theme='dark'] {
-    --content-background: #18181b;
+    --content-background: #1a1a1a;
+    /* 👉 新增：強制覆蓋 Docusaurus 核心的背景與浮動區塊底色 */
+    --ifm-background-color: #1a1a1a;
+    --ifm-background-surface-color: #242424;
+
     --ifm-color-primary: hsl(214deg 100% 60%);
     --ifm-color-primary-light: hsl(214deg 100% 75%);
     --ifm-heading-color: hsl(0deg 0% 100%);
@@ -74,13 +78,17 @@
     --ifm-secondary-text-color: #eee;
     --ifm-border-color: #313131;
 
+
     --ifm-navbar-background-color: var(--content-background);
     --ifm-toc-border-color: var(--ifm-border-color);
 
-    --blog-item-background-color: linear-gradient(180deg, #1f1f22 0%, #18181b 100%);
-    --blog-item-shadow: 0 10px 18px #25374833, 0 0 8px #25374866;
-    --blog-item-shade: #27272a;
-    --blog-post-page-surface: #161719;
+   /* 修改：將卡片漸層與底色改為對應的深灰 */
+    --blog-item-background-color: linear-gradient(180deg, #242424 0%, #1a1a1a 100%);
+    --blog-item-shadow: 0 10px 18px #00000033, 0 0 8px #00000066;
+    
+    /* 修改：文章頁面背景與區塊底色 */
+    --blog-item-shade: #2a2a2a;
+    --blog-post-page-surface: #1a1a1a;
 
     --docusaurus-highlighted-code-line-bg: #4b5563;
   }
@@ -314,4 +322,30 @@ div[class^='announcementBar_'] {
     :where([class~='not-prose'], [class~='not-prose'] *)
   )::after {
   content: '';
+}
+
+
+/* =========================================
+   強制深色模式樣式覆蓋 (解決首頁白底問題)
+   ========================================= */
+
+/* 1. 強制網頁最底層背景為深灰 */
+html[data-theme='dark'],
+html[data-theme='dark'] body,
+html[data-theme='dark'] #__docusaurus {
+  background-color: #1a1a1a !important;
+}
+
+/* 2. 強制把首頁可能被硬寫的白底區塊 (Tailwind) 轉為深色 */
+html[data-theme='dark'] .bg-white,
+html[data-theme='dark'] .bg-[#fff],
+html[data-theme='dark'] .bg-gray-50,
+html[data-theme='dark'] .bg-slate-50 {
+  background-color: #1a1a1a !important;
+}
+
+/* 3. 調整導覽列 (Navbar) 的底色與邊框，讓它融入深色背景 */
+html[data-theme='dark'] .navbar {
+  background-color: #1a1a1a !important;
+  border-bottom: 1px solid #333 !important;
 }

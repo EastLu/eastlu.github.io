@@ -18,6 +18,14 @@ type SocialValue = {
 }
 
 const social: Social = {
+  github: 'https://github.com/EastLu',
+  // x: 'https://x.com/ku1zu0',
+  // juejin: 'https://juejin.cn/user/1565318510545901',
+  // wx: 'https://img.kuizuo.me/wechat.jpg',
+  email: 'east@east-lu.me',
+  // discord: 'https://discord.gg/M8cVcjDxkz',
+
+  /*
   github: 'https://github.com/kuizuo',
   x: 'https://x.com/ku1zu0',
   juejin: 'https://juejin.cn/user/1565318510545901',
@@ -25,6 +33,7 @@ const social: Social = {
   // cloudmusic: 'https://music.163.com/#/user/home?id=1333010742',
   email: 'mailto:hi@kuizuo.me',
   discord: 'https://discord.gg/M8cVcjDxkz',
+  */
 }
 
 const socialSet: Record<keyof Social | 'rss', SocialValue> = {
@@ -72,13 +81,13 @@ const socialSet: Record<keyof Social | 'rss', SocialValue> = {
   },
   email: {
     href: social.email,
-    title: '邮箱',
+    title: '電子信箱',
     icon: 'ri:mail-line',
     color: '#D44638',
   },
   cloudmusic: {
     href: social.cloudmusic,
-    title: '网易云',
+    title: '網易雲',
     icon: 'ri:netease-cloud-music-line',
     color: '#C20C0C',
   },

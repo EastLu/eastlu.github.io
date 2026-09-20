@@ -54,11 +54,11 @@ export default function BlogSection(): JSX.Element {
   const posts = chunk(blogData.posts.slice(0, BLOG_POSTS_COUNT), BLOG_POSTS_PER_ROW)
 
   if (blogData.postNum === 0) {
-    return <>作者还没开始写博文哦...</>
+    return <>作者尚未更新文章...</>
   }
 
   return (
-    <Section title={<Translate id="homepage.blog.title">近期博客</Translate>} icon="ri:quill-pen-line" href="/blog">
+    <Section title={<Translate id="homepage.blog.title">最新文章</Translate>} icon="ri:quill-pen-line" href="/blog">
       <div className="flex flex-col gap-4 overflow-hidden rounded-card p-3 md:grid md:grid-cols-12">
         {posts.map((postGroup, index) => (
           <div className="col-span-4" key={index}>

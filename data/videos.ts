@@ -19,17 +19,20 @@ export interface VideoItem {
 }
 
 export const videoCategoryLabels: Record<VideoCategory, string> = {
-  pen: '转笔',
-  cube: '魔方',
-  cardistry: '花切',
+  /*
+  pen: '轉筆',
+  cube: '魔術方塊',
+  cardistry: '花式切牌',
   zippo: 'Zippo',
   other: '其他',
+  */
 }
 
 export const videos: VideoItem[] = [
+/*
   {
     id: 'pen-spin',
-    title: '转笔',
+    title: '轉筆',
     src: 'https://img.kuizuo.me/videos/pen-spin.mp4',
     type: 'video/mp4',
     category: 'pen',
@@ -126,4 +129,5 @@ export const videos: VideoItem[] = [
     duration: '0:10',
     poster: 'https://img.kuizuo.me/videos/posters/phone-spin.jpg',
   },
+  */
 ]
