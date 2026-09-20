@@ -8,8 +8,8 @@ import Comment from '@site/src/components/Comment'
 import { type VideoCategory, type VideoItem, videoCategoryLabels, videos } from '@site/data/videos'
 import styles from './styles.module.css'
 
-const TITLE = '手指极限'
-const DESCRIPTION = '献丑罢了'
+const TITLE = '手指極限'
+const DESCRIPTION = '獻醜罷了'
 const ALL_CATEGORY = 'all'
 
 type CategoryFilter = typeof ALL_CATEGORY | VideoCategory
@@ -335,7 +335,7 @@ export default function VideosPage(): JSX.Element {
           </header>
           <VideosContent />
           <div className="margin-top--xl">
-            <Comment />
+            {/* <Comment /> */}
           </div>
         </div>
       </main>

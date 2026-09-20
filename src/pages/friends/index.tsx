@@ -8,12 +8,12 @@ import Link from '@docusaurus/Link'
 import { motion } from 'framer-motion'
 import styles from './styles.module.css'
 
-const TITLE = '友链'
-const DESCRIPTION = '有很多良友，胜于有很多财富。'
-const ADD_FRIEND_URL = 'https://github.com/kuizuo/blog/edit/main/data/friends.tsx'
-const SITE_INFO = `title: '愧怍'
-bio: '道阻且长，行则将至'
-website: 'https://kuizuo.me'
+const TITLE = '朋友鏈結'
+const DESCRIPTION = '有很多良友，勝於有很多财富。'
+const ADD_FRIEND_URL = 'https://github.com/EastLu/eastlu.github.io'
+const SITE_INFO = `title: '東方'
+bio: 'Sidere mens eadem mutato'
+website: 'https://east-lu.me'
 avatar: 'https://kuizuo.me/img/logo.png'
 `
 const friends = Friends
