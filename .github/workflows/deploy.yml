@@ -36,3 +36,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
+          cname: east-lu.me # <--- 加入這行，防止每次打包後Custom Domain被覆蓋
