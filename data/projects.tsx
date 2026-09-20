@@ -92,9 +92,6 @@ export const projects: Project[] = [
     type: 'toy',
   },
   */
-
-
-
   // {
   //   title: 'Image Hosting',
   //   description: '🖼️ 使用 Supabase 搭建一个简易图床',

@@ -100,15 +100,6 @@ export default function Footer(): JSX.Element {
               <FooterAnchor key={link.label} link={link} />
             ))}
           </nav>
-        {/*
-          <div className={styles.records}>
-            <Link href="http://beian.miit.gov.cn/">{siteInfo.beian.icp}</Link>
-            <span className={styles.recordDivider} aria-hidden="true">·</span>
-            <Link href={`http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=${getPoliceRecordCode()}`}>
-              {siteInfo.beian.police}
-            </Link>
-          </div>
-        */}
         </div>
       </div>
     </footer>
