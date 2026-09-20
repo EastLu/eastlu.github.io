@@ -61,8 +61,8 @@ export default function Hero() {
       <div className={styles.intro}>
         <Name />
         <motion.p custom={2} initial="hidden" animate="visible" variants={variants} className="max-lg:px-4">
-          <Translate id="homepage.hero.text">
-            我是一名解決方案架構師、資深TPM
+          <Translate id="homepage.hero.text" values={{ br: <br />, cvLink: (<a href="https://east-lu.me/onlineCV/" target="_blank" rel="noopener noreferrer">東方異聞錄</a>) }}>
+            {`我是一名解決方案架構師、資深TPM。{br}熱愛技術與分享，喜歡探索新事物，並且樂於與人交流。{br}目前網站正在邁向新版本，若要參考我的CV請前往 {cvLink}`}
           </Translate>
         </motion.p>
         <motion.div custom={3} initial="hidden" animate="visible" variants={variants}>
